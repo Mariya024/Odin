@@ -1,0 +1,338 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f1624;
+    color: #ccc;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+.first-section {
+    height: 15vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+nav {
+    display: flex;
+    padding-inline: 20rem;
+    font-size: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    position: absolute; 
+    top: 3px; 
+    background: transparent;
+}
+nav  a {
+    text-decoration: none;
+    color: white;
+}
+
+.click{
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    border-color: white;
+    font-size: 10px;
+    padding: 1.5px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.click:hover {
+    background-color: rgb(20, 149, 56);
+    color: rgb(8, 9, 8);
+    transition: 500ms;
+    filter: drop-shadow(0 0 10px
+    #fffdef)
+}
+
+img {
+    height: 50px;
+    width: 80px;
+    padding-top: 10px;
+}
+
+.right {
+    display: flex;
+    gap: 1rem;
+    color: white;
+    align-items: center;
+}
+.right a {
+    text-decoration: none;
+    color: white;
+}
+.right a:hover {
+    color: rgb(19, 221, 107);
+    transition: 500ms;
+    filter: drop-shadow(0 0 10px
+    #fffdef)
+}
+
+
+/* Paths Section */
+.paths-section {
+    text-align: center;
+    padding: 40px 10%;
+    flex-grow: 1;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #444;
+    margin: 40px 0;
+}
+
+.path-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.path-card {
+    background-color: #1d263b;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.large-card {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.path-card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-content .icon {
+    background-image: url(./image/f.jpeg);
+    background-color: #333;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.card-content h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #00bcd4;
+    border-radius: 5px;
+}
+
+.explore-btn:hover {
+    background-color: #0097a7;
+}
+
+.footer{
+    
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(17 24 39 / 1);
+}
+
+.fotter-box-2{
+    width: 50%;
+    color: white;
+    margin-left: 142px;
+    margin-top: 0px;
+    font-size: 9px;
+
+}
+
+.social-media{
+    width: 100%;
+    height: 50px;
+    border-top: solid;
+    border-top-width: thin;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;   
+}
+
+/* Media Queries for Different Screen Sizes */
+
+/* Adjustments for screens wider than 1200px */
+@media (min-width: 1200px) {
+    .paths-section {
+        padding: 40px 15%;
+    }
+
+    nav {
+        padding: 0 8%; /* Adjusted padding */
+    }
+}
+
+/* Adjustments for screens smaller than 1024px (typical tablet landscape or smaller laptops) */
+@media (max-width: 1024px) {
+    nav {
+        padding: 0 4%; /* Adjusted padding */
+        height: 50px; /* Reduced height */
+    }
+
+    .left img {
+        height: 30px; /* Reduced logo size */
+        margin-right: 8px; /* Adjusted margin */
+    }
+
+    .left h1 {
+        font-size: 1.1rem; /* Reduced font size */
+    }
+
+    .right a {
+        font-size: 0.8rem; /* Reduced font size */
+    }
+
+    .right svg {
+        width: 18px; /* Adjusted icon size */
+        height: 18px; /* Adjusted icon size */
+    }
+
+    .paths-section {
+        padding: 40px 5%;
+    }
+
+    .click {
+        padding: 5px 10px; /* Adjusted padding */
+        font-size: 0.8rem; /* Reduced font size */
+    }
+}
+
+/* Adjustments for screens smaller than 768px (typical tablet portrait or large mobile phones) */
+@media (max-width: 768px) {
+    nav {
+        height: 50px; /* Reduced height */
+    }
+
+    .left img {
+        height: 25px; /* Reduced logo size */
+    }
+
+    .left h1 {
+        font-size: 1rem; /* Reduced font size */
+    }
+
+    .right a {
+        font-size: 0.8rem; /* Reduced font size */
+    }
+
+    .right svg {
+        width: 16px; /* Adjusted icon size */
+        height: 16px; /* Adjusted icon size */
+    }
+
+    .paths-section {
+        padding: 40px 5%;
+    }
+
+    .right {
+        gap: 1rem;
+    }
+
+    .click {
+        padding: 6px 12px; /* Adjusted padding */
+        font-size: 0.9rem; /* Reduced font size */
+    }
+
+    .path-card {
+        max-width: 100%;
+    }
+}
+
+/* Adjustments for screens smaller than 480px (typical mobile phones) */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px 5%; /* Adjusted padding */
+        height: auto; /* Adjusted height */
+    }
+
+    .left img {
+        height: 20px; /* Reduced logo size */
+    }
+
+    .left h1 {
+        font-size: 0.9rem; /* Reduced font size */
+    }
+
+    .right {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .right a {
+        font-size: 0.7rem; /* Reduced font size */
+    }
+
+    .right svg {
+        width: 14px; /* Adjusted icon size */
+        height: 14px; /* Adjusted icon size */
+    }
+
+    .paths-section {
+        padding: 20px 5%;
+    }
+
+    .path-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .path-card {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .click {
+        width: 100%;
+        text-align: center;
+    }
+}

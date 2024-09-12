@@ -1,0 +1,163 @@
+body {
+    font-family: sans-serif;
+    background-color:rgb(17 24 39 / 1);
+    color: #fff;
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%; /* Adjusted padding for a smaller navbar */
+    height: 60px; /* Reduced height */
+    background: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left img {
+    height: 40px; 
+    width: auto;
+    margin-right: 10px; 
+}
+
+.left h1 {
+    color: #fff;
+    font-size: 1.2rem; 
+    font-weight: bold;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+}
+
+.right a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem; 
+    transition: color 0.3s ease;
+}
+
+.right a:hover {
+    color: rgb(19, 221, 107);
+}
+
+.right svg {
+    cursor: pointer;
+    transition: fill 0.3s ease;
+    width: 20px; 
+    height: 20px; 
+}
+
+.right svg:hover {
+    fill: rgb(19, 221, 107);
+}
+
+.click {
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 6px 12px; 
+    font-size: 0.9rem; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.click:hover {
+    background-color: rgb(20, 149, 56);
+    color: rgb(8, 9, 8);
+}
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: rgb(17 24 39 / 1);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    line-height: 1.6;
+}
+
+.benefits {
+    margin-top: 2rem;
+}
+
+.benefits h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.benefit img {
+    width: 50px;
+    margin-right: 1rem;
+}
+
+.benefit h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.benefit p {
+    line-height: 1.6;
+}
+
+
+
+.footer{
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(17 24 39 / 1);
+}
+
+.fotter-box-2{
+    width: 50%;
+    color: white;
+    margin-left: 142px;
+    margin-top: 0px;
+    font-size: 9px;
+
+}
+
+
+.social-media{
+    width: 100%;
+    height: 50px;
+    border-top: solid;
+    border-top-width: thin;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;   
+}

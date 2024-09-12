@@ -1,0 +1,93 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3a8a, #4f46e5), url(./image/sky.jpeg);
+    background-size: cover; /* Ensure background image covers the entire screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    color: #ffffff;
+}
+
+.card {
+    background: #2c2f33;
+    padding: 20px;
+    border-radius: 10px; /* Corrected border-radius */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    width: 100%;
+}
+
+.avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ffffff;
+    padding: 5px;
+}
+
+h1 {
+    margin: 20px 0 10px;
+    font-size: 1.5rem;
+}
+
+.status {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #b0b0b0;
+}
+
+.online {
+    color: #43b581;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.continue-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5865f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.continue-button:hover {
+    background-color: #4752c4;
+}
+
+.terms {
+    font-size: 0.8rem;
+    color: #b0b0b0;
+    margin: 20px 0 10px;
+}
+
+.terms a {
+    color: #7289da;
+    text-decoration: none;
+}
+
+.already-account {
+    color: #7289da;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.already-account:hover {
+    text-decoration: underline;
+}
